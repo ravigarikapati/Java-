@@ -1,0 +1,72 @@
+1. Steps to install java.
+A: 1.Goto Java SE download site @ http://www.oracle.com/technetwork/java/javase/downloads/index.html.
+   2.Install JDK and JRE
+   3.Include JDK's "bin" Directory in the PATH
+   4.Verify the JDK Installation(PATH=c:\Program Files\Java\jdk1.8.0_xx\bin;[other entries...])
+
+
+2. Steps to install eclipse
+A: 1.Download the Eclipse Installer 
+   2.Start the Eclipse Installer executable
+   3.Select the package to install( for JAva developers)
+   4.Select your installation folder
+   5.Launch Eclipse
+   
+3. How to create workspace in eclipse
+A:   File -> Switch Workspace -> Other... and type in my new workspace name.
+     Once in the new workspace, File -> Import... and under General choose "Existing Projects into Workspace. Press the Next button and then Browse for the old projects you would like to import. Check "Copy projects into workspace" to make a copy.
+
+
+4. How to create project
+A: 1.Click "File" ? "New" ? "Java Project".
+   2.Give the project a name.
+   3.Select the location for the project files.
+   4.Select Java Runtime Environment (JRE) you want to use.
+   5.Select your project layout. 
+   6.Click "Next" to open the "Java Settings" window. 
+   7.Use the Source tab to define your build path. 
+   8.Use the Libraries tab to add libraries to the project.
+
+5.Create .java file
+A: 1. Inside Eclipse select the menu item File > New > Project.... to open the New Project wizard 
+   2.Select Java Project then click Next to start the Open the new Java project wizard New Java Project wizard: 
+   3.In the Package Explorer, expand the JUnit project and select the source folder src.
+   4.Select the menu item File > Import....
+   5.Expand General, select Archive file, and click Next. 
+   6.Click the Browse button next to the Archive file field and browse to select 
+   7.In the Import wizard, expand the root node, press Deselect All and select only the junit node.
+   8.Make sure that the JUnit project's source folder appears in the destination Into folder field. Then click Finish. In the import progress indicator, notice that the imported resources are compiled as they are imported into the workbench. This is because the Build automatically option is checked on the Workbench preferences page.
+   9.In the Package Explorer view, expand the JUnit project and the src folder to view the JUnit packages. 
+
+6.How to create packages
+A:1. click on the File menu and selecting New ? Package.
+  2.right click in the package explorer and selecting New ? Package.
+  3.click on the package icon which is in the tool bar
+  4.Enter/confirm the source folder name.
+  5.Enter the package name.
+  6.Click on the Finish button.
+
+7. What is main method.
+A:Main method in Java is an standard method which is used by JVM to start execution of any Java program. main method is referred as entry point of Java application which is true in case of core java application but in case of container managed environment like Servlet, EJB or MIDlet this is not true as these Java programs have there own life-cycle methods like init(), service() or destory() for Servlet's which is used by container. main method in Java is run by main thread which is a non daemon thread and Java program runs until main method finishes or any other user thread is running. When we start JVM by running java command we also provide name of class which contains main method, which is later invoked by JVM to start Java program execution. for example in below command :
+
+
+8.Data members in Jva.
+A: Two types of data memebers
+ 1. Instance/non-static data members
+ 2. Static data members 
+Instance data members are those whose memory space is created each and every time whenever an object is created. Instance data members are always meant for storing specific values.
+Static data members are those whose memory space is created only once, whenever the class is loaded in the main memory irrespective of no of objects are created.Static data members are meant for storing common values.
+
+9. What is a datatype and different types
+A: Data type specifies the size and type of values that can be stored in an identifier. The Java language is rich in its data types. Different data types allow you to select the type appropriate to the needs of the application.
+Two types of data types
+Primitive: which include Integer, Character, Boolean, and Floating Point.
+Non-primitive: which include Classes, Interfaces, and Arrays
+
+
+10. What is variable?
+A: There are different types of variables in Java. 
+1. Instance Variables: Objects store their individual states in “non-static fields”, that is, fields declared without the static keyword.
+2. Class Variables: A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated.
+3. Local Variables: A method stores its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field (for example, int count = 0;).
+
